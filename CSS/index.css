@@ -1,0 +1,409 @@
+div.banner_bx{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+    /* position: relative; */
+}
+
+div.img{
+ position: relative;
+}
+
+div.banner_bx button.slick-arrow{
+    /* position: static; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 100px;  
+    border-radius: 50%;
+}
+
+.slick-prev{
+    left: 2%;
+    z-index: 5;
+}
+.slick-next{
+    right: 2%;
+}
+
+img.banner{
+    width: 100%;
+    height: 100%;
+}
+
+main.maincontainer{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* padding: 0px 10px; */
+    /* height: 1200px; */
+}
+
+h3{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+p.content{
+    font-size: 15px;
+    line-height: 28px;
+    text-align: justify;
+}
+/* 按鈕AAAAAAAAAAAAAAAAAAAAA */
+div.forbutton{
+    display: flex;
+    justify-content: flex-end;
+}
+span.headto{
+    font-size: 13px;
+    color: black;
+    border: 1px solid rgb(15, 15, 15);
+    padding:5px 15px ;
+    display: inline-flex;
+    border-radius: 20px;
+    box-shadow: #B8860B 3px 3px 0px;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+    transition: linear .4s;
+}
+span.headto:hover{
+    box-shadow:  0px 0px 0px;
+    background-color: #B8860B;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/* 第一區 */
+div.ourbeans{
+    /* border: 3px solid rgb(25, 129, 247); */
+    display: flex;
+    padding: 10% 0px;
+    justify-content: space-evenly;    
+    background-color: white;
+    /* overflow: hidden; */
+}
+div.ourbeans_txt{
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 5%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    z-index: 1;
+    box-shadow: rgb(220, 220, 220)3px 3px 10px;
+}
+
+
+div.ourbeans_txt::before{
+    content: "";
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background-color: gold;
+    z-index: -1;
+    position: absolute;
+    left: -50%;
+    top: -30%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* 圖片區 */
+div.ourbeans_imgbx{
+    /* border: 1px solid rgb(0, 255, 13); */
+    width:40%;
+    /* max-width: 800px; */
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    /* height: 500px; */
+}
+div.ourbeans_imgbx>img{
+    width: 100%;
+    z-index: 666;
+    border-radius: 50px;
+}
+
+div.ourbeans_imgbx::after{
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    right: -30%;
+    top:30%;
+    background-color: gold;
+    z-index: -1;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+/* 第二區 */
+div.ourbarista{
+    /* border: 1px solid red; */
+    display: flex;
+    margin:  0px;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    /* padding: 10% 0; */
+    position: relative;
+    overflow: hidden;
+}
+
+div.ourbarista_imgbx{
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 700px;
+    background-image: url(../img/professional.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* position: relative; */
+    /* z-index: 6; */
+    margin: 5% 0;
+}
+
+
+
+
+
+div.ourbarista_txt{
+    /* border: 1px solid purple; */
+    width:40% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    background-color: white;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    box-shadow: rgb(220, 220, 220)3px 3px 10px;
+}
+
+/* 第三區 */
+div.invitation{
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    margin:  0px;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+}
+
+div.invitation_imgbx{
+    /* border: 1px solid orange; */
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+div.invitation_txt{
+    /* border: 1px solid blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    background-color: white;
+    box-shadow: rgb(220, 220, 220)3px 3px 10px;
+}
+
+
+
+
+
+
+/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+
+
+
+div.for_img{
+    position: fixed;
+    /* border: 1px solid rgb(255, 251, 0); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -4;
+    /* padding: 10px; */
+    overflow: hidden;
+    width: 100%;
+
+}
+
+div.for_img>img{
+    /* width: 100%; */
+    width: 1900px;
+    margin: auto;
+}
+
+div.ad{
+    width: 100%;
+    height: 500px;
+}
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+/* scrollllll SCROLLLLLLLLLLLLLLLLLLL*/
+div.scrollpattern{
+    /* border: 1px solid rgb(151, 86, 255); */
+    width: 100%;
+    /* height: 100%; */
+    padding: 20px;
+    /* background-color:rgba(0, 0, 0, .8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+}
+
+div.mouse{
+    border: 2px solid rgb(255, 255, 255);
+    width: 35px;
+    height: 55px;
+    border-radius:50px ;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: black 2px 2px 10px;
+    animation-name: scrolldown2;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+
+div.dot{
+    width: 4px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    animation-name: scrolldown;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    animation-delay: 1s;
+}
+
+
+@keyframes scrolldown{
+    0% { 
+        opacity: 0.5; 
+    }
+    10% { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    100% { transform: translateY(20px); 
+        opacity: 0;
+    }
+}
+
+@keyframes scrolldown2{
+    0% { 
+        transition: translateY(-10px);
+    }
+    10% { 
+        transform: translateY(0); 
+    }
+    100% { transform: translateY(20px); 
+    
+    }
+}
+
+
+/* RWDDDDDDDDDDDDDDDD */
+
+@media screen and (max-width: 1320px){
+
+div.ourbeans{
+    /* border: 1px solid black; */
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+div.ourbeans_imgbx::after{
+    display: none;
+}
+div.ourbeans_imgbx{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    /* min-width: 400px; */
+}
+div.ourbeans_imgbx img{
+    width: 100%;
+}
+div.ourbeans_txt::before{
+    display:none
+}
+div.ourbeans_txt{
+    width: 100%;
+    /* min-width: 400px; */
+    display: flex;
+    margin: 0;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+    div.ourbarista{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    div.ourbarista_imgbx{
+        width: 100%;
+        border-radius: 50px;
+    }
+    div.ourbarista_txt{
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+    }
+    div.invitation_txt{
+        margin: 20px 0px;
+    }
+ 
+}
+@media screen and  (max-width: 991px){  
+    div.ourbarista_imgbx{
+       height: 500px;
+    }
+
+    div.ad{
+        display: none;
+       }
+}
+
+@media screen and (max-width:576px){
+    div.banner_bx{
+        margin-top: 90px;
+    }
+    div.scrollpattern{
+        display: none;
+    }
+}

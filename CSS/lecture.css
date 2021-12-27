@@ -1,0 +1,262 @@
+div.banner{
+    /* border: 3px solid teal; */
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/banner_4coffeeeee.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+h1.pagename{
+    font-size: 32px;
+    color: white;
+    display: block;
+    text-shadow: black 10px 10px 12px;
+    z-index: 10;
+}
+main.maincontainer{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+div.page_changer{
+    /* border: 1px solid orange; */
+    width: 100%;
+}
+
+ul.pageover{
+    /* border: 1px solid red; */
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin: 50px 0px;
+}
+
+ul.pageover li{
+    font-size: 15px;
+    width: 250px;
+    height: 50px;
+    transition: linear .4s;
+    font-weight: 500;
+    display: flex;
+
+}
+ul.pageover li a{
+    border: 1px solid rgb(155, 102, 5);
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    transition: linear .4s;
+    color: rgb(58, 58, 58);
+}
+
+#course{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(155, 102, 5);
+}
+ul.pageover li:hover a{
+    background-color: rgb(155, 102, 5);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+/* main content start here */
+
+div.events_present{
+    /* border: 1px solid lightcoral; */
+    padding: 0 10px;
+}
+
+div.poster{
+    border: 1px dotted rgb(148, 88, 31);
+    margin: 60px 0px;
+    display: flex;
+    padding: 2%;
+    /* background:rgb(226, 174, 29); */
+    /* box-shadow: rgb(58, 58, 58) 2px 2px 12px; */
+}
+
+div.event{
+    /* border: 1px solid green; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+div.cover_photo{
+    display: flex;
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+div.cover_photo1{
+    background-image: url(../img/wei.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.cover_photo2{
+    background-image: url(../img/wang_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.cover_photo3{
+    background-image: url(../img/wu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div.cover_photo4{
+    background-image: url(../img/whisky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+div.detail_infor{
+    /* border: 1px solid lightseagreen; */
+    width: 100%;
+    padding: 25px;
+}
+
+div.detail_infor > h4{
+    font-size: 20px;
+    margin: 10px 0px;
+    background-color: rgb(253, 192, 60);
+    padding: 10px;
+}
+div.detail_infor > ul{
+    padding: 0;
+    margin:10px 0px ;
+    color: darkgoldenrod;
+}
+
+div.detail_infor > p,li{
+    font-size: 15px;
+    line-height: 25px;
+    width: 100%;
+    text-align: justify;
+}
+/* 報名區域開始 */
+
+div.signup{ 
+    /* border: 1px solid rgb(238, 153, 26); */
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    /* background: rgb(129, 129, 129); */
+}
+
+div.signup > a{
+    font-size: 18px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    box-shadow: rgb(197, 197, 197) 2px 2px 12px;
+    /* border-radius: 20px; */
+    animation-duration: 0.8s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  
+}
+
+
+div.signup>a:hover{
+
+ /* color: honeydew; */
+ animation: none;
+}
+
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+        color: darkorange;
+    }
+    50%{
+        color: darkgoldenrod;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+/* 報名結束 */
+
+
+/* RWDDDDDDDDDDDDDDDDDDDDDDD */
+
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+}
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+    div.poster{
+        flex-direction: column;
+    }
+
+    div.detail_infor>h4{
+        text-align: center;
+    }
+
+    div.cover_photo{
+        display: none;
+    }
+
+    div.event{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+    div.page_changer{
+        padding: 0px 10px;
+    }
+    ul.pageover>li{
+        width: 45%;
+    }
+}

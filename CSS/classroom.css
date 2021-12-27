@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+div.banner{
+    /* border: 3px solid teal; */
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/bg_classroom.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+div.banner>h1{
+    font-size: 32px;
+    color: white;
+    display: block;
+    text-shadow: black 10px 10px 12px;
+    z-index: 10;
+}
+
+
+main.maincontainer{
+    /* border: 1px solid red; */
+    padding: 10px;
+    max-width:1200px ;
+    margin: auto;
+    margin-bottom: 100px;
+    /* height: 1200px; */
+}
+div.title_of_video{
+    /* border: 1px solid gold; */
+    max-width:1200px ;
+    width: 100%;
+    background: rgb(253, 227, 82);
+    padding: 2%;
+    margin-top: 50px;
+}
+div.title_of_video > h4{
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+h4{
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    color: black;
+}
+iframe{
+    width: 100%;
+}
+div.videowrapper{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: #F7CE4B;
+    margin-bottom: 20px;
+    /* padding-bottom: 20px ; */
+}
+
+/* 備用/避免影片無法順利rwd
+ @media only screen and (max-width: 768px) 
+ div.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; 16:9
+    padding-top: 25px;
+    height: 0;
+    }
+    .djsp{ display: none; }
+    .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    } */
+
+div.category{
+    /* border: 1px solid firebrick; */
+ 
+    max-width: 1200px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    
+    /* flex-direction: column; */
+}
+
+div.cf_knowhow,.cf_course{
+    /* border: 6px solid rgb(48, 59, 211); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: rgb(146, 146, 146) 2px 2px 12px; */
+    padding: 30px 0px;
+}
+
+.cf_course:hover{
+    box-shadow: rgb(146, 146, 146) 2px 2px 12px;
+}
+.cf_knowhow:hover{
+    box-shadow: rgb(146, 146, 146) 2px 2px 12px;
+}
+
+
+div.imgbx{
+    /* border:1px solid lime; */
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+div.imgbx img{
+    width: 100%;
+}
+
+div.txt_overview{
+    /* border: 1px solid rgb(255, 47, 210); */
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+
+div.txt_overview>P{
+
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    width: 90%;
+    color: rgb(43, 43, 43);
+}
+span.hint{
+    /* border: 1px solid greenyellow; */
+    font-size: 15px;
+    font-weight: 800;
+}
+
+span.hint {
+    animation-duration: 0.8s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+        color: darkorange;
+    }
+    50%{
+        color: darkgoldenrod;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+/* RWDDDDDDDDDDDDDDDDDDDDDDD */
+
+
+@media screen and  (max-width: 1140px){  
+    div.banner{
+        height: 400px;
+    }
+    div.cf_knowhow{
+        width: 100%;
+    }
+    div.cf_course{
+        width: 100%;
+    }
+    div.category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+    div.cf_knowhow{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    div.cf_course{
+        width: 100%;
+    }
+    div.category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+    iframe{
+        height:315px ;
+    }
+    div.cf_knowhow{
+        width: 100%;
+    }
+    div.cf_course{
+        width: 100%;
+    }
+    div.category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+    div.cf_knowhow{
+        width: 100%;
+    }
+    div.cf_course{
+        width: 100%;
+    }
+    div.category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

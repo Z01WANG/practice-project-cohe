@@ -1,0 +1,395 @@
+div.banner{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(../img/hoding_beans_coffee_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+div.banner>h1{
+    font-size: 32px;
+    color: white;
+    z-index: 20;
+    display: block;
+   text-shadow: black 10px 10px 12px;
+   z-index: 10;
+}
+
+
+main.maincontainer{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+div.change_category{
+    /* border: 1px solid darkolivegreen; */
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+ul.pdct_category{
+    /* border: 1px solid rgb(209, 192, 41); */
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+ul.pdct_category > li{
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;    
+    position: relative;
+    overflow: hidden;
+    margin: 0 1%;
+    border-radius: 5px;
+}
+
+ul.pdct_category > li > a {
+    /* border: 1px solid fuchsia; */
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+
+ul.pdct_category > li > a::before{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ECBC24;
+    transition: .5s;
+    mix-blend-mode: hue;
+    top: 0px;
+    left: 0px;
+    /* border-radius: 10px; */
+}
+/* ul.pdct_category > li > a::after{
+
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 20%;
+    background: rgb(255, 208, 78);
+    transition:.5s;
+    top: 0px;
+    right: 0px;
+    /* border-radius: 10px; */
+
+span::before{
+    
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 20%;
+    background: rgb(255, 188, 45);
+    transition: .5s;
+    bottom: 0px;
+    left: 0px;
+    z-index: -3;
+    /* border-radius: 10px; */
+}
+span::after{
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(155, 102, 5);
+    transition: .5s;
+    bottom: 0px;
+    right: 0px;
+    z-index: -8;
+}
+ul.pdct_category > li:hover a::before{
+    width: 100%;
+    height: 100%;
+
+}
+
+#allthepdct> a{
+    color: white;
+    font-weight: 700;
+}
+#allthepdct{
+    background: rgb(155, 102, 5);
+}
+ul.pdct_category > li:hover span::after{
+    width: 100%;
+  height: 100%;
+}
+ul.pdct_category > li:hover a{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+/* 全部商品區 */
+div.all_pdct{
+    /* border: 1px solid rgb(53, 255, 53); */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+div.pdct_card>a{
+width: 100%;
+height: 100%;
+}
+div.pdct_card{
+    border: 1px solid rgb(255, 255, 255);
+    height: auto;
+    width: 260px;
+    min-width: 200px;
+margin: 3% ;
+padding: 1%;
+display: block;
+box-shadow: rgb(199, 199, 199) 2px 2px 10px;
+}
+div.frame_pdct:hover img{
+    transform: scale(1.1);
+    transition: linear .3s;
+}
+
+div.frame_pdct:hover div.mask{
+    background-color: rgba(43, 41, 41, 0.5);
+    display: block;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.frame_pdct:hover div.alert{
+    font-size: 15px;
+    z-index: 6;
+    font-weight: bold;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    text-shadow: black 2px 2px 12px; 
+}
+
+div.frame_pdct{
+    /* border: 1px solid gold; */
+    width: 100%;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+div.pdct_txt{
+    /* border: 1px solid purple; */
+}
+div.pdct_txt h5{
+    font-size: 18px;
+    margin: 5px 0px;
+    text-align: center;
+}
+p.price{
+    font-size: 15px;
+    /* border: 1px solid red; */
+    font-weight: 900;
+    color: rgb(145, 35, 8);
+    text-align: center;
+}
+
+
+         /* 加入購物車按鈕效果 */
+div.addtocart{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+
+
+button.add_btn{
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    /* background-color: rgb(255, 252, 245); */
+    color: rgb(34, 34, 34);
+    background-image: linear-gradient(-30deg, goldenrod 50%, white 50%);
+    background-size: 300%;
+    transition: linear .4s;
+    box-shadow: grey 2px 2px 2px;
+}
+button.add_btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-position: 100%;
+    transform: translateX(-5px);
+}
+
+button.add_btn:active, button.add_btn:visited{
+   outline-color: transparent;
+}
+/* 加入購物車按鈕效果 */
+
+select{
+    font-size: 15px;
+    padding: 0px 50px;
+    border-radius: 5px;
+}
+select:hover{
+ cursor: pointer;
+}
+/* 全部商品區 */
+
+/* 切頁頁碼 */
+div.pagination{
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+ul.pagination{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+div.pagination>ul.pagination>li{
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid #ECBC24;
+    margin: 20px 2px ;
+    border-radius: 5px;
+    transition: linear .2s;
+    background: linear-gradient(0deg,#ECBC24 50%, transparent 50% );
+}
+
+div.pagination>ul.pagination>li:hover{
+    cursor: pointer;
+    background: #ECBC24;
+    color: rgb(255, 255, 255);
+}
+#thefirstpage{
+    background: #ECBC24;
+    color: rgb(255, 255, 255);
+}
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+/* 商品彈出視窗 */
+div.overlay > article>h4{
+    font-size: 20px;
+}
+
+div.overlay>article>P{
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+button.close{
+font-size: 15px;
+width: 30%;
+margin: 10px 0px;
+outline-style: none;
+border: 1px solid rgb(80, 8, 8);
+border-radius: 2px;
+background-color: white;
+cursor: pointer;
+}
+button.close:hover{
+    background-color: rgb(80, 8, 8);
+    color: white;
+}
+
+div.overlay > article{
+    background-color: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* opacity: 0; */
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0, 0, 0) 2px 2px 12px;
+  }
+div.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .5);
+    z-index: -1;
+    opacity: 0;
+  }
+div.overlay_imgbx{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+  div.overlay.-on{
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  div.overlay.-opacity-zero{
+    opacity: 0;
+  }
+div.pdct_card:hover{
+    cursor: pointer;
+}
+
+/* 彈出視窗 */
+
+/* RWDDDDDDDDDD */
+
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+    div.pdcd_last{
+        display: none;
+    }
+}
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+}

@@ -1,0 +1,549 @@
+/* banner_start from here */
+div.banner{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(../img/customized_cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+}
+h1.pagename{
+    font-size: 32px;
+    color: white;
+    display: block;
+    text-shadow: black 10px 10px 12px;
+    z-index: 10;
+}
+
+main.maincontainer{
+    /* border: 1px solid navy; */
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+}
+
+div.getstarted{
+    /* border: 1px solid blueviolet; */
+    width: 1200px;
+    /* height: 60px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+div.getstarted>h5{
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+}
+
+div.tinybean{
+    width: 5px;
+    height: 6px;
+    margin-left: 10px;
+    background-color:rgb(175, 112, 29) ;
+    display: inline-flex;
+    transform: translateY(-32px);  
+    border-radius: 100%;
+    animation-name: scrolldown2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes scrolldown2{
+    0% { 
+        transition: translateY(0px);
+    }
+    50% { 
+        transform: translateY(0); 
+        height: 3px;
+    }
+    100% { 
+        transform: translateY(20px); 
+        width: 6px;
+        height: 1px;
+    }
+}
+
+div.txt_content>h3{
+    font-size: 24px;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+h3::before{
+    content:"";
+    width: 10px;
+    height: 20px;
+    background: rgb(255, 216, 40) ;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+div.txt_content>p{
+    font-size: 15px;
+    line-height: 28px;
+    color: #fff;
+}
+
+div.infor_bean >p{
+    font-size: 15px;
+    line-height: 28px;
+    color: rgb(34, 34, 34);
+}
+
+ol{
+    padding: 0;
+    /* border: 1px solid turquoise; */
+}
+ol.steps li{
+    font-size: 15px;
+    padding: 10px 0px;
+    color: #fff;
+}
+/*  主要選豆區域_開始 */
+
+section.step1, section.step2{
+     /* border: 1px solid red; */
+     width: 1200px;
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+     margin: 10px 0px;
+}
+
+div.txt_step1, div.txt_step2{
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 20%;
+    /* height: 100%; */
+    background: rgb(151, 91, 21);
+    padding: 0;
+}
+
+div.step1_picking{
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+/* 咖啡豆挑選說明 */
+div.txt_content{
+    width: 80%;
+    margin: 0 auto;
+}
+div.txt_content > p >span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* 咖啡候選豆們 */
+div.step1_picking{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px ;
+}
+div.bean{
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 450px;
+}
+
+/* 咖啡豆的圖片盒子 */
+div.bean{
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    padding: 20px;
+
+}
+div.bean_imgbx{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 225px;
+    overflow: hidden;
+}
+
+
+div.infor_bean {
+    background-color: white;
+    padding: 10px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+div.bean_imgbx img{
+    position: absolute;
+}
+div.bean_imgbx img.innercoffee{
+    z-index: -1;
+}
+
+h5{
+    font-size: 18px;
+    text-align: center;
+    /* padding: 10px 0px; */
+}
+
+div.add{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#grabit{
+    font-weight: bold;
+    font-size: 13px;
+    height: auto;
+    background: transparent;
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(102, 66, 12);
+    border-radius: 50px;
+    transition: linear .2s;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+
+#grabit::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: inline-block;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    transform: translate(20%, 50%) rotate(0deg);
+    border-radius: 40%;
+
+}
+@keyframes liquid{
+	0%{
+        transform: translate(-50%, -70%) rotate(0deg);
+        width: 50px;
+	}
+	100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+        width: 80px;
+	}
+}
+
+#grabit:hover{
+    cursor: grab;
+    transform: translateX(-0.5rem);
+}
+#grabit:hover::before{
+    animation: liquid 1s linear infinite;
+    cursor: grab;
+}
+
+
+   /* 步驟2 */
+
+ div.step2_package{
+ /* border: 1px solid blue; */
+ width: 80%;
+ height: 100%;
+ display: flex;
+ }
+
+ /* 步驟2表單內容 */
+ div.form{
+     /* border: 1px solid rgb(180, 180, 22); */
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ div.preview_pdt{
+     /* border: 1px solid rgb(10, 10, 3); */
+     width: 50%;
+     /* height: 500px; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+/* 表單內 */
+
+label{
+    /* border: 1px solid green; */
+    font-size: 15px;
+    padding: 0px 10px 0px 5px;
+    font-weight: bold;
+}
+
+select,option{
+    font-size: 15px;
+    outline: none;
+}
+
+
+div.form_item{
+/* border: 1px solid blue; */
+padding: 10px;
+}
+
+form.package_design{
+    /* border: 1px solid black; */
+    
+}
+
+
+div.preview_frame{
+    border: 5px solid rgb(151, 91, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 360px;
+    height: 300px;
+}
+
+    
+button.submitit{
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    color: rgb(34, 34, 34);
+    background-image: linear-gradient(-30deg, goldenrod 50%, white 50%);
+    background-size: 300%;
+    transition: linear .4s;
+    box-shadow: grey 2px 2px 2px;
+    /* transform: translateX(15px); */
+}
+button.submitit:hover{
+    cursor: pointer;
+    color: #fff;
+    background-position: 100%;
+    transform: translateX(-5px);
+}
+
+
+/* 固定在右側的好朋友-來了 */
+
+div.bx_fixed_right{
+    border: 2px solid rgb(151, 91, 21);
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 10px;
+    transform: translate(100%, -50%);
+    /* min-height: 200px; */
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    transition: ease-in-out .8s;
+}
+
+div.bx_fixed_right.-open{
+ transform: translate(0%, -50%);
+}
+
+
+ button.btn_pull{
+    border: 2px solid rgb(151, 91, 21);
+    font-size: 15px;
+    position: absolute;
+    top: 5%;
+    left: -55px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    background-color: gold;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    width: 55px;
+    padding: 20px;
+}
+
+
+
+button:focus{
+    outline: none 0;
+}
+
+div.empty_bottle_bx{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    height: 50%;
+    display: flex;
+    position: relative;
+    flex-direction:column-reverse ;
+    background-color: white;
+    z-index: 1;
+}
+
+div.showtxt{
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: auto;
+    height: 50%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+div.fake_liquid{
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 100%;
+    /* background: orange; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+div.liquid{
+    /* border: 1px solid orangered; */
+    width: 100%;
+    height: 16px;
+    display: flex;
+    background-color: rgb(238, 190, 57);
+    display: none;
+}
+
+span.pdname{
+    font-size: 13px;
+    display: none;
+}
+
+button.remove{
+  font-size: 13px;
+  background-color:  rgb(158, 54, 13);
+  /* background: rgb(255, 255, 255); */
+  color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+button.remove:active{
+    transform: scale(0.9);
+    
+}
+
+/* 固定在右側的好朋友-請慢走 */
+
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+/* RWDDDDDDDDDDDDd */
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+    section.step1,section.step2{
+        display: flex;
+        flex-direction: column;
+    }
+    div.txt_step1,div.txt_step2{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    div.step1_picking{
+        width: 100%;
+    }
+    
+    div.step2_package{
+        width: 100%;
+        display: flex;
+        /* justify-content: flex-end; */
+    }
+
+}
+
+
+@media screen and  (max-width: 890px){  
+    div.step2_package{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    div.form{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+    }
+    div.preview_pdt{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    div.preview_frame{
+        width: 350px;
+    }
+    div.preview_frame img{
+        width: 100%;   
+    }
+}
+
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+    div.getstarted{
+        justify-content: center;
+        align-items: center;
+    }
+    div.form{
+        width: 100%;
+        height: auto;
+    }
+    div.preview_pdt{
+        width: 100%;
+    }
+    div.preview_frame{
+        width: 100%;
+
+    }
+    div.preview_frame img{
+        width: 100%;   
+    }
+}
+

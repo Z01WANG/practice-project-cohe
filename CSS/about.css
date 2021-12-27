@@ -1,0 +1,239 @@
+main.maincontainer{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 90px;
+}
+
+div.banner{
+    /* border: 3px solid teal; */
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/bg_team.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+h1.pagename{
+    font-size: 32px;
+    color: white;
+    display: block;
+    text-shadow: black 10px 10px 12px;
+    z-index: 10;
+}
+
+section{
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+div.imgbx{
+  /* border: 1px solid orange; */
+  max-width: 400px;
+  overflow: hidden;
+}
+
+div.txt{
+    /* border: 1px solid violet; */
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 2%; */
+    /* display: none; */
+}
+
+h4{
+    font-size:20px;
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    /* animation-name: blink1; */
+    /* animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
+
+
+    
+h4::before{
+    content: "";
+    width: 2px;
+    height: 2px;
+    background:goldenrod;
+    display: inline-flex;
+    transform: translate(-10px,0px);
+    animation-name: run;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h4.run::before{
+    content: "";
+    width: 2px;
+    height: 2px;
+    background:goldenrod;
+    display: inline-flex;
+    transform: translate(-10px,0px);
+    animation-name: run;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+h4.okay{
+    animation-play-state: paused;
+}
+
+@keyframes run{
+    0%{
+    transform-origin: initial;
+    }
+    100%{
+     width: 50px;   
+  
+    }
+}
+
+div.txt>p{
+    font-size:15px;
+    line-height: 28px;
+    display: flex;
+    /* padding: 50px; */
+    text-align: justify;
+    display: none;
+}
+
+div.startup_imgbx{
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+   /* margin-right: 10px; */
+}
+div.handmade_imgbx{
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+}
+div.inshop_imgbx{
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+div.startup_text.stretch{
+    /* border: 1px solid yellowgreen; */
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    background-color:#FFD700;
+    transition: linear 1s;
+    padding: 0 10%;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    margin-left: 10px;
+}
+
+div.handmade_text.stretch2{
+    /* border: 1px solid yellowgreen; */
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD700;
+    transition: linear 1s;
+    padding: 0 10%;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    margin-right: 10px;
+}
+
+div.inshop_text.stretch3{
+    /* border: 1px solid yellowgreen; */
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD700;
+    transition: linear 1s;
+    padding: 0 10%;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    margin-left: 10px;
+}
+
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+
+
+
+/* RWDDDDDDDDDD */
+
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+    div.pdcd_last{
+        display: none;
+    }
+}
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:50px;
+        padding: 10px;
+    }
+    section.features{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    div.imgbx{
+        width: 100%;
+        display: flex;
+    }
+    div.txt{
+        width: 100%;
+    }
+
+    div.txt h4::before{
+        animation-play-state: paused;
+        display: none;
+    }
+
+    div.txt >p{
+        display: flex;
+        padding: 10px;
+    }
+}

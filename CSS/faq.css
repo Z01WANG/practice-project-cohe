@@ -1,0 +1,118 @@
+
+div.banner{
+    /* border: 3px solid teal; */
+    max-width: 100%;
+    height: 600px;
+    background-image: url(../img/faq_coverphotp_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* test */
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 90px;
+}
+h1{
+    font-size: 32px;
+    color: white;
+    z-index: 20;
+    display: block;
+   text-shadow: black 10px 10px 12px;
+   z-index: 10;
+}
+main.maincontainer{
+    /* border: 1px solid dodgerblue; */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    /* height: 2000px; */
+}
+div.question, div.answer, ol>li{
+    font-size: 18px;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+div.answer, ol>li{
+    font-size: 15px;
+}
+ol>li{
+    border:  none;
+    list-style: initial;
+}
+
+div.question{
+    font-weight: 600;
+    background-color: gold;
+}
+
+div.answer{
+    display: none;
+    /* background-color: coral; */
+}
+
+div.qa_card{
+    margin: 10px 0px;
+    border: 2px solid rgb(151, 91, 21);
+    border-radius:5px ;
+    overflow: hidden;
+}
+
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 20px;
+   border-radius: 100%;
+   border-top: 2px solid rgb(255, 190, 51);
+   background-color: rgba(0, 0, 0, 0.24);
+   display: none;
+}
+
+
+
+
+/* RWDDDDDDD */
+
+@media screen and  (max-width: 991px){  
+    div.banner{
+        height: 400px;
+    }
+}
+
+@media screen and  (max-width: 767px){  
+    div.banner{
+        height: 250px;
+    }
+}
+
+@media screen and  (max-width: 575px){  
+    div.banner{
+        height: 200px;
+    }
+}
+
+
+
+
+/* @media screen and (max-width: 575px){  
+    width: 100%;
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    width: 540px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px){  
+    width: 720px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px){  
+    width: 960px;
+  }
+  @media screen and (min-width: 1200px){  
+    width: 1140px;
+  } */

@@ -1,0 +1,77 @@
+div.addtocart{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+#addit{
+    font-weight: 900;
+    font-size: 15px;
+    height: auto;
+    background: transparent;
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(102, 66, 12);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: peru 0px 0px 0px;
+    transition: linear .2s;
+    position: relative;
+    overflow: hidden;
+}
+
+#addit::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: inline-block;
+    z-index: -1;
+    width: 60px;
+    height: 50px;
+    background-color: rgb(250, 229, 45);
+    transform: translate(-50%, -10%) rotate(0deg);
+border-radius: 45%;
+
+}
+@keyframes water{
+	0%{
+		transform: translate(-50%, -70%) rotate(0deg);
+	}
+	100%{
+		transform: translate(-50%, -75%) rotate(360deg);
+	}
+}
+
+#addit:hover::before{
+    animation: water .8s linear infinite;
+}
+/* another one */
+div.add{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+div.add_btn{
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid goldenrod;
+    padding: 5px 10px;
+    border-radius: 20px;
+    /* background-color: rgb(255, 252, 245); */
+    color: rgb(34, 34, 34);
+    background-image: linear-gradient(-130deg, goldenrod 50%, white 50%);
+    background-size: 300%;
+    transition: linear .4s;
+    box-shadow: grey 2px 2px 2px;
+}
+div.add_btn:hover{
+    cursor: grab;
+    color: #fff;
+    background-position: 100%;
+    transform: translateX(-0.5rem);
+    
+}
+
+
