@@ -185,27 +185,10 @@
 
 $(document).ready(function(){
 // 問答文章點擊 //
-    $('.q1').click(function(){
-        $('.a1').slideToggle();
-    })
-
-    $('.q2').click(function(){
-        $('.a2').slideToggle();
-    })
-
-    $('.q3').click(function(){
-        $('.a3').slideToggle();
-    })
-
-    $('.q4').click(function(){
-        $('.a4').slideToggle();
-    })
-    $('.q5').click(function(){
-        $('.a5').slideToggle();
-    })
-    $('.q6').click(function(){
-        $('.a6').slideToggle();
-    })
+    $('.question').click(function(){
+        let target = $(this).next();
+        $(target).slideToggle();
+    });
 //文章結束//
 
 //漢堡寶功能//
@@ -244,22 +227,4 @@ $(document).ready(function(){
 </body>
 </html>
 
-
-<!-- 
-    ICON 替換方式 : 塞兩個不同樣式的漢堡在同個DIV
-
-    $(function(){
-    $('#bar-btn').click(function(){
-      if($('.bar-close').css('display')=='none'){
-        $('.bar-list').slideDown();
-        $('.bar-open').hide();
-        $('.bar-close').show();
-      }else{
-        $('.bar-list').slideUp();
-        $('.bar-close').hide();
-        $('.bar-open').show();
-      };
-    });
-  });
-   -->
   
