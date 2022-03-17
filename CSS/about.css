@@ -10,7 +10,7 @@ div.banner{
     /* border: 3px solid teal; */
     width: 100%;
     height: 600px;
-    background-image: url(../img/bg_team.png);
+    background-image: url(../img/shop.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,6 +40,10 @@ div.imgbx{
   /* border: 1px solid orange; */
   max-width: 400px;
   overflow: hidden;
+}
+
+div.imgbx > img {
+    height: 400px;
 }
 
 div.txt{
