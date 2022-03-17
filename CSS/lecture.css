@@ -98,21 +98,21 @@ div.cover_photo{
 }
 
 div.cover_photo1{
-    background-image: url(../img/wei.jpg);
+    background-image: url(../img/man.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div.cover_photo2{
-    background-image: url(../img/wang_.jpg);
+    background-image: url(../img/man.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div.cover_photo3{
-    background-image: url(../img/wu.jpg);
+    background-image: url(../img/man.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
